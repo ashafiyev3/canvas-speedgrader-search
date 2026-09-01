@@ -1,0 +1,98 @@
+#sgs-box {
+  position: fixed;
+  top: 64px;
+  right: 16px;
+  z-index: 2147483647;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #c7cdd1;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  font-family: "Lato Extended", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #2d3b45;
+}
+
+#sgs-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px 4px;
+}
+
+#sgs-title {
+  font-weight: 700;
+  flex: 1;
+}
+
+#sgs-ungraded-wrap {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#sgs-close {
+  border: none;
+  background: none;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7780;
+  padding: 0 2px;
+}
+#sgs-close:hover { color: #2d3b45; }
+
+#sgs-input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 4px 10px 6px;
+  padding: 6px 8px;
+  border: 1px solid #c7cdd1;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+#sgs-input:focus {
+  outline: none;
+  border-color: #0374b5;
+  box-shadow: 0 0 0 2px rgba(3, 116, 181, 0.25);
+}
+
+#sgs-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+#sgs-results li {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+#sgs-results li.sgs-active { background: #eef6fb; }
+
+.sgs-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sgs-check {
+  color: #0b874b;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+#sgs-status {
+  padding: 6px 12px 8px;
+  font-size: 12px;
+  color: #6b7780;
+  border-top: 1px solid #e8ebed;
+}
