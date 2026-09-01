@@ -86,7 +86,3 @@ Student data is read from Canvas's own API (`/api/v1/courses/.../gradeable_stude
 `content.js` reads the course and assignment IDs out of the page URL, fetches the gradeable-student roster and submission states from the Canvas REST API, and renders a filtered list. Selecting a student rewrites `student_id` in the URL and navigates — the same thing the dropdown does, minus the scrolling.
 
 For anonymous-grading assignments, it drops the `anonymous_id` parameter and lets Canvas re-resolve it.
-
-## License
-
-MIT
